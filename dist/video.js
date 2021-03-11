@@ -29416,7 +29416,7 @@
 
 
   function videojs$1(id, options, ready) {
-      console.log('TEST - videojs fix events')
+      logger('TEST VIDEOJS - EVENT FIX');
     var player = videojs$1.getPlayer(id);
 
     if (player) {
