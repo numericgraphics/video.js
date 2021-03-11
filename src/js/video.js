@@ -124,6 +124,7 @@ const normalizeId = (id) => id.indexOf('#') === 0 ? id.slice(1) : id;
  *         The `videojs()` function returns a {@link Player|Player} instance.
  */
 function videojs(id, options, ready) {
+  console.log('TEST -  videojs - implementation 7.6.5')
   let player = videojs.getPlayer(id);
 
   if (player) {
