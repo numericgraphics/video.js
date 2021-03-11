@@ -1619,6 +1619,7 @@
 
 
   function fixEvent(event) {
+      log.warn('fixEvent')
     function returnTrue() {
       return true;
     }
@@ -1804,7 +1805,7 @@
           var handlersCopy = handlers.slice(0);
 
           for (var m = 0, n = handlersCopy.length; m < n; m++) {
-            if(isFunction(event.isImmediatePropagationStopped)) {
+            if (isFunction(event.isImmediatePropagationStopped)) {
                 if (event.isImmediatePropagationStopped()) {
                     break;
                 } else {
@@ -29416,7 +29417,6 @@
 
 
   function videojs$1(id, options, ready) {
-      logger('TEST VIDEOJS - EVENT FIX');
     var player = videojs$1.getPlayer(id);
 
     if (player) {
